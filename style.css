@@ -46,12 +46,16 @@ body {
     margin-left: 2.2vw;
 }
 
+#nav h3 {
+    display: none;
+}
+
 #nav h1::after {
     content: "©";
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: #1B1B1B;
+    color: #2B2828;
     position: absolute;
     top: 0;
     right: 0%;
@@ -63,7 +67,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 0.9vw;
-    color: #666;
+    color: #2B2828;
     letter-spacing: 0.1px;
     position: absolute;
     bottom: 0;
@@ -80,14 +84,14 @@ body {
     border-right: 2px solid #000;
     font-size: 26px;
     font-weight: 500;
-    color: #161616;
+    color: #2B2828;
 }
 
-#nav h2:nth-last-child(2) {
+#nav h2:nth-last-child(3) {
     width: 29%;
 }
 
-#nav h2:nth-last-child(1) {
+#nav h2:nth-last-child(2) {
     width: 10%;
     border-right: none;
     padding-right: 4vw;
@@ -114,7 +118,7 @@ body {
 }
 
 #overlay {
-    height: 56%;
+    height: fit-content;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -222,7 +226,7 @@ body {
 }
 
 #alphabet h6 {
-    color: #1B1B1B;
+    color: #2B2828;
     font-size: 1.1vw;
     text-transform: uppercase;
     font-weight: 400;
@@ -240,23 +244,23 @@ body {
 }
 
 #alphabet h6:nth-child(9) {
-    color: #B2B2B2;
+    color: #C3C1C1;
 }
 
 #alphabet h6:nth-child(11) {
-    color: #B2B2B2;
+    color: #C3C1C1;
 }
 
 #alphabet h6:nth-child(15) {
-    color: #B2B2B2;
+    color: #C3C1C1;
 }
 
 #alphabet h6:nth-child(18) {
-    color: #B2B2B2;
+    color: #C3C1C1;
 }
 
 #alphabet h6:nth-child(22) {
-    color: #B2B2B2;
+    color: #C3C1C1;
 }
 
 #page2 {
@@ -313,7 +317,7 @@ body {
     font-weight: 500;
     height: 100%;
     width: 45%;
-    color: #161616;
+    color: #2B2828;
 }
 
 #page3 {
@@ -619,7 +623,7 @@ body {
     font-weight: 500;
     height: 100%;
     width: 45%;
-    color: #161616;
+    color: #2B2828;
 }
 
 #marquee {
@@ -748,7 +752,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 20px;
-    color: #1B1B1B;
+    color: #2B2828;
     position: absolute;
     top: 0;
     right: 0%;
@@ -760,7 +764,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 0.9vw;
-    color: #666;
+    color: #2B2828;
     letter-spacing: 0.1px;
     position: absolute;
     bottom: 0;
@@ -778,7 +782,7 @@ body {
     padding: 30px 40px;
     font-size: 26px;
     font-weight: 500;
-    color: #161616;
+    color: #2B2828;
 }
 
 #footer-contant {
@@ -812,4 +816,342 @@ body {
     font-size: 1.5vw;
     padding-right: 15px;
 }
+
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #nav {
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0 5vw;
+    }
+
+    #nav h1 {
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+
+    #nav h3 {
+        display: block;
+    }
+
+    #nav h1::after {
+        display: none;
+    }
+
+    #nav h1::before {
+        display: none;
+    }
+
+    #nav h2 {
+        display: none;
+    }
+        
+    #center {
+        height: 40%;
+    }
+
+    #overlay {
+        height: fit-content;
+    }
+
+    #over1 h1 {
+        font-size: 5.5vw;
+    }
+
+    #over1 h2 {
+        font-size: 2vw;
+    }
+
+    #over2 h4 {
+        font-size: 3vw;
+    }
+
+    #over2 img {
+        height: 5vw;
+    }
+
+    #scroll {
+        height: 20vh;
+    }
+
+    #container {
+        width: 210%;
+    }
+
+    #scroll img {
+        width: 15.5%;
+    }
+
+    #alphabet {
+        height: 6vh;
+        gap: 0.3vw;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    #alphabet::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #alphabet h5 {
+        font-size: 3.8vw;
+        margin-left: 2vw;
+    }
+    
+    #alphabet h6 {
+        font-size: 3vw;
+    }
+
+    #page2 {
+        height: 70%;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    #page2-part1 {
+        height: 50%;
+        width: 100%;
+    }
+    
+    #page2-part2 {
+        height: 50%;
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    #page2-part2 img {
+        height: 100%;
+        width: 60%;
+    }
+    
+    #part2-detail {
+        height: 100%;
+        width: 40%;
+        flex-direction: column;
+        padding: 1vw 2vw;
+    }
+    
+    #part2-detail h5 {
+        font-size: 4vw;
+        height: 100%;
+        width: 90%;
+    }
+    
+    #part2-detail p {
+        font-size: 2.8vw;
+        height: 100%;
+        width: 90%;
+    }
+    
+    #page3 {
+        height: 35%;
+    }
+    
+    #page3-heading {
+        height: 7vw;
+    }
+    
+    #page3-heading h1 {
+        font-size: 6vw;
+    }
+    
+    #page3-content {
+        height: calc(100% - 7vw);
+    }
+    
+    #page3-left {
+        width: 35%;
+    }
+    
+    #rightArrow {
+        top: 18%;
+        left: -2%;
+    }
+    
+    #page3-left h4 {
+        font-size: 2.5vw;
+    }
+    
+    #page3-right {
+        width: 65%;
+    }
+    
+    #page3-right img {
+        object-position: 0 20%;
+    }
+    
+    #page3-part2 {
+        height: 40%;
+    }
+    
+    #page3-part2 img {
+        object-position: center;
+    }
+
+    #page4 {
+        height: 40%;
+    }
+    
+    #page4-heading {
+        text-align: center;
+        font-family: monument;
+        text-transform: uppercase;
+        font-size: 10vw;
+        /* font-weight: 600; */
+        margin-bottom: 7vh;
+    }
+    
+    #page4 h1 {
+        font-size: 5vw;
+    }
+    
+    #page4 h5 {
+        font-size: 2.4vw;
+    }
+    
+    .elem {
+        height: 10vh;
+    }
+    
+    .elem img {
+        height: 15vw;
+        width: 15vw;
+    }
+    
+    .elem h4 {
+        font-size: 3vw;
+    }
+    
+
+    #page5 {
+        display: none;
+    }
+
+    #page6 {
+        display: none;
+    }
+    
+
+    #page7 {
+        display: none;
+    }
+    
+    #marquee {
+        margin-top: 20vh;
+        margin-bottom: 4vh;
+    }
+    
+    #page8 {
+        height: 70%;
+        position: relative;
+        flex-direction: column;
+    }
+    
+    #page8 h1 {
+        font-size: 7vw;
+    }
+    
+    #page8-details {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #page8-left {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    
+    #page8-details h3 {
+        font-size: 4.5vw;
+        width: 90%;
+        /* text-decoration: underline; */
+    }
+    
+    #page8-details img {
+        height: 55vw;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #page8-right {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 4vw;
+    }
+    
+    #page9 {
+        margin-top: 35vh;
+        height: 20%;
+        width: 100%;
+    }
+    
+    #footer {
+        height: 75%;
+        width: 100%;
+    }
+    
+    #footer h1 {
+        height: 100%;
+        width: 20%;
+        font-size: 28px;
+        margin-left: 10.5vw;
+    }
+    
+    #footer h1::after {
+        display: none;
+    }
+    
+    #footer h1::before {
+        display: none;
+    }
+    
+    #footer h2 {
+        display: none;
+    }
+    
+    #footer-contant {
+        height: 100%;
+        width: 60%;
+    }
+    
+    #footer-bottom {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #footer-bottom p {
+        font-size: 2.5vw;
+    }
+    
+    #icons {
+        padding-top: 1.5vw;
+        padding-bottom: 2.5vw;
+    }
+    
+    #icons i {
+        font-size: 4vw;
+        padding-right: 15px;
+    }
+
+}
+
+
+
 
